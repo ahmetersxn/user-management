@@ -16,3 +16,11 @@ deploy:
   on:
     branch: master
     app: user-management-finartz
+
+
+notifications:
+  email:
+    recipients:
+      - ahmetersxn@gmail.com
+    on_success: always # default: change
+    on_failure: never # default: always
