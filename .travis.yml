@@ -15,4 +15,4 @@ deploy:
     secure: $HEROKU_API_KEY
   on:
     branch: master
-    app: user-management
+    app: user-management-finartz
