@@ -1,8 +1,11 @@
 language: java
+
 jdk:
-  - oraclejdk9
+  - oraclejdk8
+  -
 install:
-  - mvn clean install
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  -
 script:
   - mvn test
 
@@ -11,5 +14,5 @@ deploy:
   api_key:
     secure: $HEROKU_API_KEY
   on:
-    branch: production
+    branch: master
     app: user-management
